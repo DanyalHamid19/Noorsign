@@ -75,7 +75,7 @@ export default function FranchiseOpportunities() {
             justifyContent: "center",
           }}
         >
-          <div>
+          <div style={{ paddingLeft: "30px" }}>
             <img src={fr1} alt="" />
             <Typography style={{ paddingTop: "10px", color: "#0066B3" }}>
               MORE THAN 35 YEARS OF PROVEN HISTORY
@@ -109,13 +109,13 @@ export default function FranchiseOpportunities() {
               LEADER OF $29 BILLION INDUSTRY
             </Typography>
           </div>
-          <div>
+          <div style={{ paddingRight: "50px" }}>
             <img src={fr1} alt="" />
             <Typography style={{ paddingTop: "10px", color: "#0066B3" }}>
               MORE THAN 35 YEARS OF PROVEN HISTORY
             </Typography>
           </div>
-          <div>
+          <div style={{ paddingRight: "40px" }}>
             <img src={fr5} alt="" />
             <Typography style={{ paddingTop: "10px", color: "#0066B3" }}>
               TOP RATED B2B BRAND
