@@ -55,9 +55,68 @@ const Home = () => {
           </Typography>
         </div>
       </Box>
-      <Box
-        style={{ display: "flex", flexDirection: "row", paddingTop: "30px" }}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: "50px",
+          justifyContent: "center",
+          color: "white",
+        }}
       >
+        <Box
+          style={{
+            width: "300px",
+            height: "150px", // Adjust the height as needed
+            borderRadius: "15px",
+            backgroundColor: "red", // Adjust the background color and opacity as needed
+            position: "relative",
+            top: "-75px", // Half of the box height to center it
+            textAlign: "center",
+            paddingTop: "50px",
+            fontWeight: "bold",
+          }}
+        >
+          <Typography style={{ fontFamily: "semibold", fontSize: "30px" }}>
+            Get Your Quote
+          </Typography>
+        </Box>
+        <Box
+          style={{
+            width: "300px",
+            height: "150px", // Adjust the height as needed
+            borderRadius: "15px",
+            backgroundColor: "red", // Adjust the background color and opacity as needed
+            position: "relative",
+            top: "-75px", // Half of the box height to center it
+            textAlign: "center",
+            paddingTop: "50px",
+            fontWeight: "bold",
+          }}
+        >
+          <Typography style={{ fontFamily: "semibold", fontSize: "30px" }}>
+            Find a Location
+          </Typography>
+        </Box>{" "}
+        <Box
+          style={{
+            width: "300px",
+            height: "150px", // Adjust the height as needed
+            borderRadius: "15px",
+            backgroundColor: "red", // Adjust the background color and opacity as needed
+            position: "relative",
+            top: "-75px", // Half of the box height to center it
+            textAlign: "center",
+            paddingTop: "50px",
+            fontWeight: "bold",
+          }}
+        >
+          <Typography style={{ fontFamily: "semibold", fontSize: "30px" }}>
+            Explore Products{" "}
+          </Typography>
+        </Box>
+      </div>
+      <Box style={{ display: "flex", flexDirection: "row" }}>
         <div style={{ marginRight: "10px" }}>
           <Typography
             variant="h4"
@@ -77,8 +136,8 @@ const Home = () => {
           </Typography>
           <Typography style={{ paddingTop: "20px" }}>
             Your business deserves to be seen, and at the custom sign shop
-            NOORSIGN, we can help you with visibility and so much more. We are
-            a custom sign and visual solutions company that can handle a wide
+            NOORSIGN, we can help you with visibility and so much more. We are a
+            custom sign and visual solutions company that can handle a wide
             variety of your business’s needs, including content development,
             graphic design, and project management. Our visual idea experts
             offer unmatched insight and will work closely with you to understand
@@ -102,11 +161,11 @@ const Home = () => {
             deliver exactly what you need.
           </Typography>
           <Typography style={{ paddingTop: "20px" }}>
-            At NOORSIGN, we specialize in a variety of services to meet all
-            your signage needs. That includes indoor/outdoor signs and banners;
-            yard & site signs; vehicle graphics, window lettering and decals’
-            custom tradeshow displays & exhibits; wall, floor or ceiling murals
-            as well as messaging boards and digital sign technology solutions.
+            At NOORSIGN, we specialize in a variety of services to meet all your
+            signage needs. That includes indoor/outdoor signs and banners; yard
+            & site signs; vehicle graphics, window lettering and decals’ custom
+            tradeshow displays & exhibits; wall, floor or ceiling murals as well
+            as messaging boards and digital sign technology solutions.
           </Typography>
         </div>
         <img style={{ width: "50%" }} src={homepage2} alt="" />
@@ -127,12 +186,12 @@ const Home = () => {
             </strong>
           </Typography>
           <Typography style={{ paddingTop: "20px" }}>
-            For over 35 years, NOORSIGN has been helping businesses of all
-            kinds bring their vision to life and extend their brand’s reach –
-            and we can’t wait to do the same for you. To learn how we can help
-            you make impactful, lasting impressions, see some of our customer
-            stories about how we have helped other business owners overcome
-            their branding and messaging challenges.
+            For over 35 years, NOORSIGN has been helping businesses of all kinds
+            bring their vision to life and extend their brand’s reach – and we
+            can’t wait to do the same for you. To learn how we can help you make
+            impactful, lasting impressions, see some of our customer stories
+            about how we have helped other business owners overcome their
+            branding and messaging challenges.
           </Typography>
           <Typography style={{ paddingTop: "20px" }}>
             With our extensive selection of digital signage, interior and
@@ -187,10 +246,61 @@ const Home = () => {
         src={homepage5}
         alt=""
       />
-      <Typography variant="h4" style={{ color: "#000081", fontWeight: "bold",textAlign:"center",paddingTop:"20px" }}>
+      <Box
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          width: "80%",
+          height: "80px",
+          position: "relative",
+          top: "-40px",
+          backgroundColor: "#002A86",
+          borderRadius: "10px",
+          margin: "auto",
+          color: "white",
+          paddingTop: "25px",
+        }}
+      >
+        <Typography
+          style={{
+            fontFamily: "semibold",
+            fontSize: "20px",
+            paddingLeft: "20px",
+          }}
+        >
+          <strong>Join for exclusive content, tips, and more!</strong>
+        </Typography>
+        <div
+          style={{
+            height: "50px", // Adjust the height as needed
+            borderRight: "2px solid #0096D6", // Adjust the color and thickness as needed
+            marginLeft: "20px", // Adjust the space between the text and the line
+            paddingLeft: "50px",
+            marginTop:"-10px"
+          }}
+        ></div>
+        <Typography
+          style={{
+            fontFamily: "semibold",
+            fontSize: "20px",
+            paddingLeft: "100px",
+          }}
+        >
+          <strong>NOORSIGNS Newsletter</strong>
+        </Typography>
+      </Box>
+      <Typography
+        variant="h4"
+        style={{
+          color: "#000081",
+          fontWeight: "bold",
+          textAlign: "center",
+          // paddingTop: "20px",
+        }}
+      >
         <strong>From start to finish, we've got you covered.</strong>
       </Typography>
-      <Typography style={{ paddingTop: "20px" ,textAlign:"center"}}>
+      <Typography style={{ paddingTop: "20px", textAlign: "center" }}>
         At NOORSIGN, we are more than just signs. We are a strategic partner
         that helps to increase our customers’ visibility through a
         comprehensive, creative, and results-based approach. That’s why we offer
