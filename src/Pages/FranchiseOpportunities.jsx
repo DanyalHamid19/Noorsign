@@ -111,7 +111,7 @@ export default function FranchiseOpportunities() {
           </div>
           <div style={{ paddingRight: "50px" }}>
             <img src={fr1} alt="" />
-            <Typography style={{ paddingTop: "10px", color: "#0066B3" }}>
+            <Typography style={{ paddingTop: "10px", color: "#0066B3"}}>
               MORE THAN 35 YEARS OF PROVEN HISTORY
             </Typography>
           </div>
@@ -150,7 +150,7 @@ export default function FranchiseOpportunities() {
               Opening hours
             </Typography>
             <Typography variant="body1" paragraph>
-              Monday – Saturday, 10am – 6pm
+              Monday - Saturday, 10am - 6pm
             </Typography>
             <Typography
               style={{ fontWeight: "bold" }}

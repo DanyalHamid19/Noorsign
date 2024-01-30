@@ -1,8 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../Images/logo.png";
 
-export default function Navbar() {
+const Navbar = () => {
+  const location = useLocation();
+  const [selectedPage, setSelectedPage] = useState("");
+
+  useEffect(() => {
+    // Update selectedPage whenever the location changes
+    const path = location.pathname.substring(1); // Remove leading slash
+    setSelectedPage(path || "home"); // Set default to "home" if path is empty
+  }, [location.pathname]);
+
   return (
     <div>
       <nav
@@ -17,43 +26,81 @@ export default function Navbar() {
               className="logo"
               style={{ width: "50px", height: "50px", marginRight: "10px" }}
             />
-            <span style={{ fontWeight: "bold" }}>Noor Sign </span>
+            <span style={{ fontWeight: "bold", color: "#000" }}>
+              Noor Sign{" "}
+            </span>
             <br />
-            <span style={{ fontStyle: "italic" }}>One Call Does It All</span>
+            <span style={{ fontStyle: "italic", color: "#000" }}>
+              One Call Does It All
+            </span>
           </Link>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto">
-              {" "}
-              {/* mx-auto centers the links */}
               <li className="nav-item">
                 <Link
-                  className="nav-link active mx-2"
-                  aria-current="page"
+                  className={`nav-link mx-2 ${
+                    selectedPage === "home" && "active"
+                  }`}
                   to="/"
+                  style={{
+                    color: selectedPage === "home" ? "#006ACB" : "#000",
+                  }}
                 >
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active mx-2" to="/about">
+                <Link
+                  className={`nav-link mx-2 ${
+                    selectedPage === "about" && "active"
+                  }`}
+                  to="/about"
+                  style={{
+                    color: selectedPage === "about" ? "#006ACB" : "#000",
+                  }}
+                >
                   About Us
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active mx-2" to="/products">
+                <Link
+                  className={`nav-link mx-2 ${
+                    selectedPage === "products" && "active"
+                  }`}
+                  to="/products"
+                  style={{
+                    color: selectedPage === "products" ? "#006ACB" : "#000",
+                  }}
+                >
                   Products
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active mx-2" to="/contactUs">
+                <Link
+                  className={`nav-link mx-2 ${
+                    selectedPage === "contactUs" && "active"
+                  }`}
+                  to="/contactUs"
+                  style={{
+                    color: selectedPage === "contactUs" ? "#006ACB" : "#000",
+                  }}
+                >
                   Contact Us
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link active mx-2"
+                  className={`nav-link mx-2 ${
+                    selectedPage === "franchise-opportunities" && "active"
+                  }`}
                   to="/franchise-opportunities"
+                  style={{
+                    color:
+                      selectedPage === "franchise-opportunities"
+                        ? "#006ACB"
+                        : "#000",
+                  }}
                 >
                   Franchise Opportunities
                 </Link>
@@ -64,4 +111,6 @@ export default function Navbar() {
       </nav>
     </div>
   );
-}
+};
+
+export default Navbar;

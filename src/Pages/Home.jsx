@@ -67,13 +67,13 @@ const Home = () => {
         <Box
           style={{
             width: "300px",
-            height: "150px", // Adjust the height as needed
+            height: "120px", // Adjust the height as needed
             borderRadius: "15px",
             backgroundColor: "red", // Adjust the background color and opacity as needed
             position: "relative",
-            top: "-75px", // Half of the box height to center it
+            top: "-60px", // Half of the box height to center it
             textAlign: "center",
-            paddingTop: "50px",
+            paddingTop: "40px",
             fontWeight: "bold",
           }}
         >
@@ -84,13 +84,13 @@ const Home = () => {
         <Box
           style={{
             width: "300px",
-            height: "150px", // Adjust the height as needed
+            height: "120px", // Adjust the height as needed
             borderRadius: "15px",
             backgroundColor: "red", // Adjust the background color and opacity as needed
             position: "relative",
-            top: "-75px", // Half of the box height to center it
+            top: "-60px", // Half of the box height to center it
             textAlign: "center",
-            paddingTop: "50px",
+            paddingTop: "40px",
             fontWeight: "bold",
           }}
         >
@@ -101,13 +101,13 @@ const Home = () => {
         <Box
           style={{
             width: "300px",
-            height: "150px", // Adjust the height as needed
+            height: "120px", // Adjust the height as needed
             borderRadius: "15px",
             backgroundColor: "red", // Adjust the background color and opacity as needed
             position: "relative",
-            top: "-75px", // Half of the box height to center it
+            top: "-60px", // Half of the box height to center it
             textAlign: "center",
-            paddingTop: "50px",
+            paddingTop: "40px",
             fontWeight: "bold",
           }}
         >
