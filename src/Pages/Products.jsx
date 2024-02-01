@@ -167,23 +167,29 @@ const Products = () => {
   return (
     <div>
       <div
-        style={{ backgroundColor: "#8EE5EC", width: "100%", height: "300px" }}
+        style={{
+          backgroundColor: "#8EE5EC",
+          width: "100%",
+          minHeight: "300px",
+          padding: "20px",
+          boxSizing: "border-box",
+        }}
       >
         <h1
           style={{
             fontWeight: "bold",
-            marginLeft: "50px",
-            marginTop: "20px",
-            paddingTop: "30px",
+            marginLeft: "5%",
+            marginTop: "10px",
+            paddingTop: "20px",
             color: "#002A86",
           }}
         >
           Your Statement, Our Products
         </h1>
-        <h2 style={{ marginLeft: "50px", marginTop: "10px" }}>
+        <h2 style={{ marginLeft: "5%", marginTop: "5px" }}>
           Custom Business Signage, Graphics & So Much More
         </h2>
-        <p style={{ marginLeft: "50px", marginTop: "10px" }}>
+        <p style={{ marginLeft: "5%", marginTop: "5px" }}>
           Your business needs to be seen, and NOORSIGN has a wide variety of
           products to help communicate your message to prospective customers and
           clients. Our expert team can assist you with everything from custom
@@ -193,29 +199,36 @@ const Products = () => {
           to learn about your needs and recommend the products and services we
           think will best help you reach more people.
         </p>
-        <p style={{ marginLeft: "50px", marginTop: "10px" }}>
+        <p style={{ marginLeft: "5%", marginTop: "5px" }}>
           Products and services may vary by location. Please reach out to your
           local NOORSIGN center for more information.
         </p>
       </div>
 
-      {/* Bootstrap card layout */}
       <div className="container mt-4 p-4">
-        <div className="row">
+        <div className="row justify-content-center">
           {products.map((product) => (
-            <div key={product.id} className="col-md-4">
-              <div className="card" style={{ width: "21.1rem",marginBottom:"20px"}}>
+            <div key={product.id} className="col-lg-4 col-md-6 col-sm-12 mb-3">
+              <div className="card" style={{ width: "21.1rem" }}>
                 <img
                   src={product.imageUrl}
                   alt={product.name}
-                  className="card-img-top"
-                  style={{ width: "21rem", height: "18rem" }}
+                  className="card-img-top img-fluid"
+                  style={{ maxWidth: "100%", maxHeight: "300px" }}
                 />
-                <div className="card-body">
+                <div className="card-body" style={{maxHeight:"200px"}}>
                   <h5 className="card-title">{product.name}</h5>
                   <p className="card-text">{product.description}</p>
-                  <p className="card-text">Price:<span style={{ color: "blue" }}>{" "}{product.price}</span></p>
-                  <p className="card-text"> Availability:<span style={{ color: "green" }}> {" "}{product.availability}</span></p>
+                  <p className="card-text">
+                    Price:{" "}
+                    <span style={{ color: "blue" }}>{product.price}</span>
+                  </p>
+                  <p className="card-text">
+                    Availability:{" "}
+                    <span style={{ color: "green" }}>
+                      {product.availability}
+                    </span>
+                  </p>
                 </div>
               </div>
             </div>
