@@ -9,6 +9,8 @@ import ContactUs from "./Pages/ContactUs";
 import FranchiseOpportunities from "./Pages/FranchiseOpportunities";
 import Container from "react-bootstrap/Container";
 import Footer from "./Components/Footer";
+import "./App.css";
+
 
 function App() {
   return (
